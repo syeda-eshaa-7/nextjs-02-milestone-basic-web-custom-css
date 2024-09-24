@@ -1,0 +1,45 @@
+
+
+/* Container for the main content */
+.container {
+  max-width: 1200px; /* Set a max width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding */
+}
+
+/* Card styles */
+.card {
+  background-color: rgb(215, 209, 240); /* White background for the card */
+  border: 1px solid #2a116e; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Inner padding */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(20, 41, 228, 0.2); /* Increase shadow on hover */
+}
+
+/* Custom button styles */
+.custom {
+  background-color: #365dc7; /* Tomato color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Pointer cursor for buttons */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transition effects */
+}
+
+.custom:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+  background-color: #ff4500; /* Darker shade on hover */
+}
+
+/* Responsive styles for grid items */
+@media (max-width: 768px) {
+  .grid {
+      grid-template-columns: 1fr; /* Stack items on smaller screens */
+  }
+}
